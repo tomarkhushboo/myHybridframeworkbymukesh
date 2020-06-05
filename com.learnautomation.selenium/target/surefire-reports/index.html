@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Regression_testng_Suite">
-              <span class="suite-name border-passed">Regression_testng_Suite</span>
+              <span class="suite-name border-failed">Regression_testng_Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">5 methods, 2 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Regression_testng_Suite" class="hide-methods failed suite-Regression_testng_Suite"> (hide)</a> <!-- hide-methods failed suite-Regression_testng_Suite -->
+                      <a href="#" panel-name="suite-Regression_testng_Suite" class="show-methods failed suite-Regression_testng_Suite"> (show)</a> <!-- show-methods failed suite-Regression_testng_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Regression_testng_Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression_testng_Suite" title="testcases.VerifyLoginPage" hash-for-method="testLoginPage">testLoginPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression_testng_Suite" title="testcases.VerifyWomenPage" hash-for-method="testWomenPage">testWomenPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Regression_testng_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -107,22 +126,12 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Regression_testng_Suite" title="testcases.VerifyLoginPageWithExtentReport" hash-for-method="testLoginPage">testLoginPage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Regression_testng_Suite" title="testcases.VerifyLoginPageWithReportAndScreenshot" hash-for-method="testLoginPage">testLoginPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Regression_testng_Suite" title="testcases.VerifyLoginPage" hash-for-method="testLoginPage">testLoginPage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Regression_testng_Suite" title="testcases.VerifyWomenPage" hash-for-method="testWomenPage">testWomenPage</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression_testng_Suite" title="testcases.VerifyLoginPageWithExtentReport" hash-for-method="testLoginPage">testLoginPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Regression_testng_Suite -->
@@ -137,24 +146,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Regression_testng_Suite" class="panel Regression_testng_Suite">
-          <div class="suite-Regression_testng_Suite-class-passed">
+          <div class="suite-Regression_testng_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testcases.VerifyLoginPageWithReportAndScreenshot</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testLoginPage">
-                  </a> <!-- testLoginPage -->
-                  <span class="method-name">testLoginPage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Regression_testng_Suite-class-passed -->
-          <div class="suite-Regression_testng_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">testcases.VerifyWomenPage</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -163,13 +157,79 @@
                   <a name="testWomenPage">
                   </a> <!-- testWomenPage -->
                   <span class="method-name">testWomenPage</span>
+                  <div class="stack-trace">org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;IDEA-PC&apos;, ip: &apos;192.168.0.7&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:332)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:155)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+	at org.openqa.selenium.json.JsonOutput.lambda$null$21(JsonOutput.java:168)
+	at java.util.LinkedHashMap$LinkedValues.forEach(LinkedHashMap.java:608)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:168)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+	at org.openqa.selenium.json.JsonOutput.lambda$null$23(JsonOutput.java:177)
+	at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:65)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:176)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:255)
+	at org.openqa.selenium.json.Json.toJson(Json.java:42)
+	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:227)
+	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:117)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+	at utility.Helper.mousehover(Helper.java:20)
+	at pages.WomenPage.clickonwomentshirt(WomenPage.java:36)
+	at testcases.VerifyWomenPage.testWomenPage(VerifyWomenPage.java:32)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;IDEA-PC&apos;, ip: &apos;192.168.0.7&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: driver.version: RemoteWebDriver
+		at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:279)
+		at org.openqa.selenium.json.Json.toJson(Json.java:44)
+		... 41 more
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:328)
+	... 53 more
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@title=&apos;Women&apos;]&quot;}
+  (Session info: chrome=83.0.4103.97)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;IDEA-PC&apos;, ip: &apos;192.168.0.7&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\WINDOWS\TEMP\scoped_dir9...}, goog:chromeOptions: {debuggerAddress: localhost:54886}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 0bb344050ddf8338d0fffc92b1da2afe
+*** Element info: {Using=xpath, value=//a[@title=&apos;Women&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:204)
+	at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:155)
+	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:75)
+	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:84)
+	... 58 more
+... Removed 39 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Regression_testng_Suite-class-passed -->
-          <div class="suite-Regression_testng_Suite-class-passed">
+          </div> <!-- suite-Regression_testng_Suite-class-failed -->
+          <div class="suite-Regression_testng_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">testcases.VerifyLoginPage</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -178,14 +238,19 @@
                   <a name="testLoginPage">
                   </a> <!-- testLoginPage -->
                   <span class="method-name">testLoginPage</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at testcases.VerifyLoginPage.testLoginPage(VerifyLoginPage.java:35)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Regression_testng_Suite-class-passed -->
+          </div> <!-- suite-Regression_testng_Suite-class-failed -->
           <div class="suite-Regression_testng_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testcases.VerifyLoginPageWithExtentReport</span>
+              <span class="class-name">testcases.VerifyLoginPageWithReportAndScreenshot</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -208,6 +273,21 @@
                   <a name="testHomePage">
                   </a> <!-- testHomePage -->
                   <span class="method-name">testHomePage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression_testng_Suite-class-passed -->
+          <div class="suite-Regression_testng_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.VerifyLoginPageWithExtentReport</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginPage">
+                  </a> <!-- testLoginPage -->
+                  <span class="method-name">testLoginPage</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -270,30 +350,30 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testWomenPage')
-data.setCell(0, 2, 'testcases.VerifyWomenPage')
-data.setCell(0, 3, 9089);
+data.setCell(0, 1, 'testLoginPage')
+data.setCell(0, 2, 'testcases.VerifyLoginPageWithReportAndScreenshot')
+data.setCell(0, 3, 23152);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testLoginPage')
-data.setCell(1, 2, 'testcases.VerifyLoginPage')
-data.setCell(1, 3, 7654);
+data.setCell(1, 2, 'testcases.VerifyLoginPageWithExtentReport')
+data.setCell(1, 3, 20718);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testLoginPage')
-data.setCell(2, 2, 'testcases.VerifyLoginPageWithReportAndScreenshot')
-data.setCell(2, 3, 7281);
+data.setCell(2, 1, 'testWomenPage')
+data.setCell(2, 2, 'testcases.VerifyWomenPage')
+data.setCell(2, 3, 7091);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'testLoginPage')
-data.setCell(3, 2, 'testcases.VerifyLoginPageWithExtentReport')
-data.setCell(3, 3, 6078);
+data.setCell(3, 2, 'testcases.VerifyLoginPage')
+data.setCell(3, 3, 2328);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'testHomePage')
 data.setCell(4, 2, 'testcases.VerifyHomePage')
-data.setCell(4, 3, 62);
+data.setCell(4, 3, 51);
 window.suiteTableData['Regression_testng_Suite']= { tableData: data, tableDiv: 'times-div-Regression_testng_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 30 seconds</span>
+              <span class="suite-total-time">Total running time: 53 seconds</span>
               <div id="times-div-Regression_testng_Suite">
               </div> <!-- times-div-Regression_testng_Suite -->
             </div> <!-- times-div -->
@@ -325,72 +405,76 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testLoginPage</span>
-                <span class="method-start">13801 ms</span>
+                <span class="method-start">18751 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">21459 ms</span>
+                <span class="method-start">21102 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.VerifyLoginPageWithReportAndScreenshot</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">22628 ms</span>
+                <span class="method-start">25946 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testLoginPage</span>
-                <span class="method-start">35544 ms</span>
+                <span class="method-start">52030 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown([TestResult name=testLoginPage status=SUCCESS method=VerifyLoginPageWithReportAndScreenshot.testLogi...)</span>
-                <span class="method-start">42825 ms</span>
+                <span class="method-start">75182 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.VerifyWomenPage</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">44481 ms</span>
+                <span class="method-start">77768 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testWomenPage</span>
-                <span class="method-start">56899 ms</span>
+                <span class="method-start">90620 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">65988 ms</span>
+                <span class="method-start">97719 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.VerifyLoginPageWithExtentReport</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">67143 ms</span>
+                <span class="method-start">99098 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testLoginPage</span>
-                <span class="method-start">80470 ms</span>
+                <span class="method-start">122664 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">86549 ms</span>
+                <span class="method-start">143382 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.VerifyHomePage</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">88126 ms</span>
+                <span class="method-start">144522 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testHomePage</span>
-                <span class="method-start">100086 ms</span>
+                <span class="method-start">165373 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">100148 ms</span>
+                <span class="method-start">165424 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

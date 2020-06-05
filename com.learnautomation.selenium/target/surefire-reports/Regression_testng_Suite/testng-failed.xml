@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Regression_testng_Suite]">
+  <test thread-count="5" verbose="0" name="Regression_testng_Test(failed)">
+    <classes>
+      <class name="testcases.VerifyWomenPage">
+        <methods>
+          <include name="teardown"/>
+          <include name="testWomenPage"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testcases.VerifyWomenPage -->
+      <class name="testcases.VerifyLoginPage">
+        <methods>
+          <include name="teardown"/>
+          <include name="testLoginPage"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testcases.VerifyLoginPage -->
+    </classes>
+  </test> <!-- Regression_testng_Test(failed) -->
+</suite> <!-- Failed suite [Regression_testng_Suite] -->
