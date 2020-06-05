@@ -2,48 +2,48 @@
 <testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Regression_testng_Suite" duration-ms="104104" started-at="2020-06-04T17:45:11 IST" finished-at="2020-06-04T17:46:56 IST">
+  <suite name="Regression_testng_Suite" duration-ms="101209" started-at="2020-06-06T02:12:16 IST" finished-at="2020-06-06T02:13:57 IST">
     <groups>
     </groups>
-    <test name="Regression_testng_Test" duration-ms="104104" started-at="2020-06-04T17:45:11 IST" finished-at="2020-06-04T17:46:56 IST">
+    <test name="Regression_testng_Test" duration-ms="101209" started-at="2020-06-06T02:12:16 IST" finished-at="2020-06-06T02:13:57 IST">
       <class name="testcases.VerifyWomenPage">
-        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.VerifyWomenPage@a3ffec]" name="setup" is-config="true" duration-ms="14118" started-at="2020-06-04T17:45:57 IST" finished-at="2020-06-04T17:46:11 IST">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.VerifyWomenPage@a3ffec]" name="setup" is-config="true" duration-ms="12418" started-at="2020-06-06T02:13:01 IST" finished-at="2020-06-06T02:13:13 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testWomenPage()[pri:0, instance:testcases.VerifyWomenPage@a3ffec]" name="testWomenPage" duration-ms="9287" started-at="2020-06-04T17:46:11 IST" finished-at="2020-06-04T17:46:20 IST">
+        <test-method status="PASS" signature="testWomenPage()[pri:0, instance:testcases.VerifyWomenPage@a3ffec]" name="testWomenPage" duration-ms="9089" started-at="2020-06-06T02:13:13 IST" finished-at="2020-06-06T02:13:22 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testWomenPage -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:testcases.VerifyWomenPage@a3ffec]" name="teardown" is-config="true" duration-ms="1198" started-at="2020-06-04T17:46:20 IST" finished-at="2020-06-04T17:46:21 IST">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:testcases.VerifyWomenPage@a3ffec]" name="teardown" is-config="true" duration-ms="1154" started-at="2020-06-06T02:13:22 IST" finished-at="2020-06-06T02:13:23 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- testcases.VerifyWomenPage -->
       <class name="testcases.VerifyLoginPageWithExtentReport">
-        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.VerifyLoginPageWithExtentReport@1caeb3e]" name="setup" is-config="true" duration-ms="12729" started-at="2020-06-04T17:46:21 IST" finished-at="2020-06-04T17:46:34 IST">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.VerifyLoginPageWithExtentReport@1caeb3e]" name="setup" is-config="true" duration-ms="13326" started-at="2020-06-06T02:13:23 IST" finished-at="2020-06-06T02:13:37 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testLoginPage()[pri:0, instance:testcases.VerifyLoginPageWithExtentReport@1caeb3e]" name="testLoginPage" duration-ms="6345" started-at="2020-06-04T17:46:34 IST" finished-at="2020-06-04T17:46:40 IST">
+        <test-method status="PASS" signature="testLoginPage()[pri:0, instance:testcases.VerifyLoginPageWithExtentReport@1caeb3e]" name="testLoginPage" duration-ms="6078" started-at="2020-06-06T02:13:37 IST" finished-at="2020-06-06T02:13:43 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginPage -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:testcases.VerifyLoginPageWithExtentReport@1caeb3e]" name="teardown" is-config="true" duration-ms="1299" started-at="2020-06-04T17:46:40 IST" finished-at="2020-06-04T17:46:42 IST">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:testcases.VerifyLoginPageWithExtentReport@1caeb3e]" name="teardown" is-config="true" duration-ms="1576" started-at="2020-06-06T02:13:43 IST" finished-at="2020-06-06T02:13:44 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- testcases.VerifyLoginPageWithExtentReport -->
       <class name="testcases.VerifyLoginPageWithReportAndScreenshot">
-        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.VerifyLoginPageWithReportAndScreenshot@6fa38a]" name="setup" is-config="true" duration-ms="13834" started-at="2020-06-04T17:45:35 IST" finished-at="2020-06-04T17:45:49 IST">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.VerifyLoginPageWithReportAndScreenshot@6fa38a]" name="setup" is-config="true" duration-ms="12916" started-at="2020-06-06T02:12:39 IST" finished-at="2020-06-06T02:12:52 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testLoginPage()[pri:0, instance:testcases.VerifyLoginPageWithReportAndScreenshot@6fa38a]" name="testLoginPage" duration-ms="5950" started-at="2020-06-04T17:45:49 IST" finished-at="2020-06-04T17:45:55 IST">
+        <test-method status="PASS" signature="testLoginPage()[pri:0, instance:testcases.VerifyLoginPageWithReportAndScreenshot@6fa38a]" name="testLoginPage" duration-ms="7281" started-at="2020-06-06T02:12:52 IST" finished-at="2020-06-06T02:12:59 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginPage -->
-        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:testcases.VerifyLoginPageWithReportAndScreenshot@6fa38a]" name="teardown" is-config="true" duration-ms="1619" started-at="2020-06-04T17:45:55 IST" finished-at="2020-06-04T17:45:57 IST">
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:testcases.VerifyLoginPageWithReportAndScreenshot@6fa38a]" name="teardown" is-config="true" duration-ms="1654" started-at="2020-06-06T02:12:59 IST" finished-at="2020-06-06T02:13:01 IST">
           <params>
             <param index="0">
               <value>
@@ -56,29 +56,29 @@
         </test-method> <!-- teardown -->
       </class> <!-- testcases.VerifyLoginPageWithReportAndScreenshot -->
       <class name="testcases.VerifyHomePage">
-        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.VerifyHomePage@1e88b3c]" name="setup" is-config="true" duration-ms="12751" started-at="2020-06-04T17:46:42 IST" finished-at="2020-06-04T17:46:54 IST">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.VerifyHomePage@1e88b3c]" name="setup" is-config="true" duration-ms="11960" started-at="2020-06-06T02:13:44 IST" finished-at="2020-06-06T02:13:56 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testHomePage()[pri:0, instance:testcases.VerifyHomePage@1e88b3c]" name="testHomePage" duration-ms="18" started-at="2020-06-04T17:46:54 IST" finished-at="2020-06-04T17:46:54 IST">
+        <test-method status="PASS" signature="testHomePage()[pri:0, instance:testcases.VerifyHomePage@1e88b3c]" name="testHomePage" duration-ms="62" started-at="2020-06-06T02:13:56 IST" finished-at="2020-06-06T02:13:56 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testHomePage -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:testcases.VerifyHomePage@1e88b3c]" name="teardown" is-config="true" duration-ms="1235" started-at="2020-06-04T17:46:54 IST" finished-at="2020-06-04T17:46:56 IST">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:testcases.VerifyHomePage@1e88b3c]" name="teardown" is-config="true" duration-ms="1016" started-at="2020-06-06T02:13:56 IST" finished-at="2020-06-06T02:13:57 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- testcases.VerifyHomePage -->
       <class name="testcases.VerifyLoginPage">
-        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.VerifyLoginPage@1c62251]" name="setup" is-config="true" duration-ms="14898" started-at="2020-06-04T17:45:11 IST" finished-at="2020-06-04T17:45:26 IST">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.VerifyLoginPage@1c62251]" name="setup" is-config="true" duration-ms="13797" started-at="2020-06-06T02:12:16 IST" finished-at="2020-06-06T02:12:30 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testLoginPage()[pri:0, instance:testcases.VerifyLoginPage@1c62251]" name="testLoginPage" duration-ms="7610" started-at="2020-06-04T17:45:26 IST" finished-at="2020-06-04T17:45:34 IST">
+        <test-method status="PASS" signature="testLoginPage()[pri:0, instance:testcases.VerifyLoginPage@1c62251]" name="testLoginPage" duration-ms="7654" started-at="2020-06-06T02:12:30 IST" finished-at="2020-06-06T02:12:38 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginPage -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:testcases.VerifyLoginPage@1c62251]" name="teardown" is-config="true" duration-ms="1125" started-at="2020-06-04T17:45:34 IST" finished-at="2020-06-04T17:45:35 IST">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:testcases.VerifyLoginPage@1c62251]" name="teardown" is-config="true" duration-ms="1163" started-at="2020-06-06T02:12:38 IST" finished-at="2020-06-06T02:12:39 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
